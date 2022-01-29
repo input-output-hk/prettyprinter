@@ -1,5 +1,5 @@
-{-# LANGUAGE DeriveGeneric     #-}
-{-# LANGUAGE OverloadedStrings #-}
+{-# LANGUAGE DeriveGeneric        #-}
+{-# LANGUAGE OverloadedStrings    #-}
 
 {-# OPTIONS_GHC -fno-warn-orphans #-}
 
@@ -10,20 +10,20 @@ import Prelude.Compat
 
 import           Control.DeepSeq
 import           Control.Monad.Compat
-import           Gauge
 import           Data.Char
 import           Data.Map                              (Map)
 import qualified Data.Map                              as M
-import           Data.Text                             (Text)
-import qualified Data.Text                             as T
-import qualified Data.Text.IO                          as T
-import qualified Data.Text.Lazy                        as TL
+import           Prettyprinter.Util.Compat.Text        (Text)
+import qualified Prettyprinter.Util.Compat.Text        as T
+import qualified Prettyprinter.Util.Compat.Text.IO     as T
+import qualified Prettyprinter.Util.Compat.Text.Lazy   as TL
 import           Prettyprinter
 import           Prettyprinter.Render.Text
 import           GHC.Generics
 import           Test.QuickCheck
 import           Test.QuickCheck.Gen
 import           Test.QuickCheck.Random
+import           Test.Tasty.Bench
 import qualified Text.PrettyPrint.ANSI.Leijen          as WL
 
 
